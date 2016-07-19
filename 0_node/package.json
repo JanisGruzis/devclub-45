@@ -1,0 +1,8 @@
+{
+  "name": "0_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Jānis Gruzis",
+  "license": "MIT"
+}

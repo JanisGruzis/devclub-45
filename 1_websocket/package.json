@@ -1,0 +1,12 @@
+{
+  "name": "1_websocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Jānis Gruzis",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ws": "^1.1.1"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Example</title>
+	</head>
+	<body>
+		<ul id="list">
+		</ul>
+
+		<input id="message" type="text"/>
+		<button onclick="send()">Sūtīt</button>
+
+		<script>
+			var ws = new WebSocket('ws://' + window.location.hostname + ':8080');
+			var message = document.getElementById('message');
+			var list = document.getElementById('list');
+
+			ws.onmessage = function(data){
+				list.innerHTML += '<li>' + data.data + '</li>';
+			};
+
+			function send() {
+				ws.send(message.value);
+			}
+		</script>
+	</body>
+</html>
